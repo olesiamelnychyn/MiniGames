@@ -431,7 +431,7 @@ img {
             transition: all 0.4s linear; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
               line-height: 45px;
-              color: #43f17d;
+              color: #000;
               padding: 0px 30px;
               transition: all 150ms linear;
               display: block;
@@ -440,7 +440,7 @@ img {
               border-bottom: none; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
               background-image: -moz-linear-gradient(0deg, #4dabff 0%, #62ddff 100%);
-              background-image: -webkit-linear-gradient(0deg, #4dabff 0%, #62ddff 100%);
+              background-image: -webkit-linear-gradient(0deg, #2bdfa3 0%, #4df9ff  100%);
               background-image: -ms-linear-gradient(0deg, #4dabff 0%, #62ddff 100%);
               color: #fff; }
         @media (min-width: 992px) {
@@ -496,20 +496,23 @@ img {
 /* Home Banner Area css
 ============================================================================================ */
 .home_banner_area {
+  padding-top: 130px;
+  padding-bottom: 100px; 
   z-index: 1;
-  background: url(../img/banner/home-banner.jpg) no-repeat center center;
+  /* background: url(..Main/img/home-banner.jpg) no-repeat center center; */
+  background-image: url("../Main/img/home-banner.jpg");
   background-size: cover; }
   .home_banner_area .banner_inner {
     width: 100%; }
-    .home_banner_area .banner_inner .home_left_img {
+    /* .home_banner_area .banner_inner .home_left_img {
       padding-top: 230px;
-      padding-bottom: 230px; }
+      padding-bottom: 230px; } */
     .home_banner_area .banner_inner .col-lg-6 {
       vertical-align: middle;
       align-self: center; }
     .home_banner_area .banner_inner .banner_content {
       text-align: left;
-      color: #fff;
+      color: rgb(156, 146, 146);
       margin-left: 70px; }
       .home_banner_area .banner_inner .banner_content h2 {
         margin-top: 0px;
@@ -518,7 +521,7 @@ img {
         line-height: 72px;
         margin-bottom: 20px; }
       .home_banner_area .banner_inner .banner_content p {
-        color: #fff;
+        color: rgb(156, 146, 146);
         font-size: 16px;
         margin-bottom: 20px; }
       .home_banner_area .banner_inner .banner_content .watch_video {
@@ -3837,7 +3840,7 @@ h6 {
       color: rgba(255, 255, 255, 0.5);
       cursor: pointer; }
       .footer_area .f_widget ul li:hover {
-        color: #3fcaff; }
+        color: #136472; }
 
 .single-footer-widget {
   padding: 30px 0;
@@ -3857,7 +3860,7 @@ h6 {
       height: 30px;
       width: 30px;
       line-height: 30px;
-      background: #4c4588;
+      background: #2a5c74;
       margin-left: 6px;
       display: inline-block;
       text-align: center; }
