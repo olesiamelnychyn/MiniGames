@@ -1,0 +1,41 @@
+{% extends "Hangman/base.html" %}
+{% load static %}
+    {% block title %} Hangman {% endblock%}
+    {% block home %} <li class="nav-item active"><a class="nav-link" href="../" style="color: #0f7463;">Home</a></li> {% endblock %}
+    {% block hangman %} <li class="nav-item"><a class="nav-link" href="../hangman" style="color: #000000">Hangman</a></li>{% endblock %}
+    {% block content %}
+
+<script src="{% static '/vendors/game.js' %}"></script>
+ <div class="home_banner_area">
+    <div style="padding: 100px;" >
+    <div align="center">
+     <h2 style="color: white;" id="catagoryName"></h2>
+    <div class="rowhiu">
+        <div class="column" style="padding: 100px" >
+            <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+        </div>
+        <div class="column">
+            <div style="color: white;" id="hold"></div>
+        </div>
+    </div>
+      <h4 style="color: white;"id="mylives"></h4> 
+      <h4 style="color: white;" id="clue">Clue -</h4> 
+      <div id="buttons">
+    </div> 
+    <br>
+     <div class="container">
+       <a class="primary_btn" id="hint">Hint</a>
+       <a class="primary_btn" i id="reset">Play again</a>
+     </div>
+ </div>
+ </div>
+            
+
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+{% endblock %}

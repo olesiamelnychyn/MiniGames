@@ -205,7 +205,8 @@ img {
     padding: 0 60px; }
   .gradient_btn:hover {
     color: #22195e;
-    box-shadow: 0px 10px 30px rgba(130, 82, 250, 0.2); }
+    box-shadow: 0px 10px 30px rgba(130, 82, 250, 0.2); 
+  }
 
 .primary_btn {
   display: inline-block;
@@ -236,6 +237,19 @@ img {
     background-position: right center;
     color: #22195e; }
 
+.button_mine{
+  background: -webkit-linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff 100%);
+  background: -moz-linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff 100%);
+  background: -ms-linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff 100%);
+  background: -o-linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff 100%);
+  background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff 100%);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 50px;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
 .overlay, .single-gallery .content {
   position: absolute;
   left: 0;
@@ -3867,8 +3881,21 @@ h6 {
       .single-footer-widget .social_widget a:hover {
         background: #3fcaff; }
 
+    
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.rowhiu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
